@@ -60,6 +60,11 @@ void Facility::setStyleRental(const string &styleRental) {
     Facility::styleRental = styleRental;
 }
 
-void Facility::output() {
-
+bool Facility::operator<(const Facility &rhs) const {
+    return idFacility < rhs.idFacility;
 }
+
+
+
+
+

@@ -3,6 +3,8 @@
 //
 
 #include "FuramaController.h"
+#include "FacilityManagement.h"
+#include "BookingManagement.h"
 
 void FuramaController::displayMainMenu() {
     bool check = true;
@@ -28,9 +30,11 @@ void FuramaController::displayMainMenu() {
                 break;
             }
             case 3:{
+                FacilityManagement().facilityMenu();
                 break;
             }
             case 4:{
+                BookingManagement().bookingMenu();
                 break;
             }
             case 5:{
@@ -43,5 +47,4 @@ void FuramaController::displayMainMenu() {
 
         }
     }
-
 }

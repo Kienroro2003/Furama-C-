@@ -12,40 +12,41 @@
 class Booking {
 private:
     string idBooking;
-    string startDate;
-    string endDate;
+    Date startDate;
+    Date endDate;
     Customer customer;
-    Facility facility;
+    Facility* facility;
 public:
     Booking();
 
-    Booking(const string &idBooking, const string &startDate, const string &endDate, const Customer &customer,
-            const Facility &facility);
+    Booking(const string &idBooking, const Date &startDate, const Date &endDate, const Customer &customer,
+            Facility *facility);
+
+
 
     const string &getIdBooking() const;
 
     void setIdBooking(const string &idBooking);
 
-    const string &getStartDate() const;
+    const Date &getStartDate() const;
 
-    void setStartDate(const string &startDate);
+    void setStartDate(const Date &startDate);
 
-    const string &getEndDate() const;
+    const Date &getEndDate() const;
 
-    void setEndDate(const string &endDate);
+    void setEndDate(const Date &endDate);
 
     const Customer &getCustomer() const;
 
     void setCustomer(const Customer &customer);
 
-    const Facility &getFacility() const;
+    Facility *getFacility() const;
 
-    void setFacility(const Facility &facility);
+    void setFacility(Facility *facility);
 
-    void output();
+    void output() const;
 
-
-
+    bool operator<(const Booking &rhs) const;
 };
 
 

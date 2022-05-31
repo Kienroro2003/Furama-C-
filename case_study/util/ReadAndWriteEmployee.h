@@ -11,7 +11,6 @@
 class ReadAndWriteEmployee {
 public:
     list<Employee> readFile(string path);
-    void writeFile(string path,Employee &e);
     void writeFile(string path,list<Employee> &list);
 
 };

@@ -12,8 +12,6 @@
 class FuramaController {
 public:
     void displayMainMenu();
-
-
 };
 
 

@@ -23,15 +23,17 @@ void Room::setFreeService(const string &freeService) {
 
 
 
-void Room::output() {
-    Facility::output();
-    cout << "Room{idFacility: " << getIdFacility()
-    << ", nameService: " << getNameService()
-    << ", areaUser: " << getAreaUser()
-    << ", rentalPrice: " << getRentalPrice()
-    << ", rentalPeopleMax: " << getRentalPeopleMax()
-    << ", styleRental: " << getStyleRental()
-    << ", freeService: " << getFreeService()
-    <<"}"
-    << endl;
+void Room::output() const {
+    cout << setw(8)<< getIdFacility()
+    << setw(10)<< getNameService()
+    << setw(15)<< getAreaUser()
+    << setw(15)<< getRentalPrice()
+    << setw(15)<< getRentalPeopleMax()
+    << setw(20)<< getStyleRental()
+    << setw(60)<< getFreeService();
 }
+
+Room::Room(const string &idFacility, const string &nameService, double areaUser, int rentalPrice, int rentalPeopleMax,
+           const string &styleRental, const string &freeService) : Facility(idFacility, nameService, areaUser,
+                                                                            rentalPrice, rentalPeopleMax, styleRental),
+                                                                   freeService(freeService) {}

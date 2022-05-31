@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "case_study::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-case_study-Debug-f768c3ca67e7b03fef0c.json",
+					"jsonFile" : "target-case_study-Debug-2e2e3691beff38e54530.json",
 					"name" : "case_study",
 					"projectIndex" : 0
 				}
@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/Users/kienroro2003/Desktop/C++/case_study/cmake-build-debug",
-		"source" : "/Users/kienroro2003/Desktop/C++/case_study"
+		"build" : "/Users/kienroro2003/Desktop/C++/Furama-C-/case_study/cmake-build-debug",
+		"source" : "/Users/kienroro2003/Desktop/C++/Furama-C-/case_study"
 	},
 	"version" : 
 	{

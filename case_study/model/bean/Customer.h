@@ -15,9 +15,17 @@ private:
 public:
     Customer();
 
-    Customer(const string &idCode, const string &fullName, const string &dateOfBirth, const string &sex,
+    Customer(const string &idCode, const string &fullName, const Date &dateOfBirth, const string &sex,
              const string &id, const string &phoneNumber, const string &emailAddress, const string &typeCustomer,
              const string &address);
+
+    const string &getTypeCustomer() const;
+
+    void setTypeCustomer(const string &typeCustomer);
+
+    const string &getAddress() const;
+
+    void setAddress(const string &address);
 
     void output() override;
 };

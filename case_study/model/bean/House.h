@@ -20,6 +20,9 @@ public:
     House(const string &idFacility, double areaUser, int rentalPrice, int rentalPeopleMax,
           const string &styleRental, const string &standardHose, int floor);
 
+    House(const string &idFacility, const string &nameService, double areaUser, int rentalPrice, int rentalPeopleMax,
+          const string &styleRental, const string &standardHose, int floor);
+
     const string &getStandardHose() const;
 
     void setStandardHose(const string &standardHose);
@@ -28,7 +31,7 @@ public:
 
     void setFloor(int floor);
 
-    void output() override;
+    void output()const override;
 };
 
 

@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/kienroro2003/Desktop/C++/case_study/cmake-build-debug"
+			"value" : "/Users/kienroro2003/Desktop/C++/Furama-C-/case_study/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -515,7 +515,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/kienroro2003/Desktop/C++/case_study"
+			"value" : "/Users/kienroro2003/Desktop/C++/Furama-C-/case_study"
 		},
 		{
 			"name" : "CMAKE_INSTALL_NAME_TOOL",
@@ -1087,7 +1087,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/kienroro2003/Desktop/C++/case_study/cmake-build-debug"
+			"value" : "/Users/kienroro2003/Desktop/C++/Furama-C-/case_study/cmake-build-debug"
 		},
 		{
 			"name" : "case_study_IS_TOP_LEVEL",
@@ -1111,7 +1111,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/kienroro2003/Desktop/C++/case_study"
+			"value" : "/Users/kienroro2003/Desktop/C++/Furama-C-/case_study"
 		}
 	],
 	"kind" : "cache",

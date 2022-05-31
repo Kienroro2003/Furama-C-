@@ -32,7 +32,7 @@ public:
 
     int getFloor() const;
 
-    void output() override;
+    void output() const override;
 
 };
 

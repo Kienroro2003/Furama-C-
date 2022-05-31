@@ -16,13 +16,9 @@ private:
 public:
     Employee();
 
-    Employee(const string &idCode, const string &fullName, const string &dateOfBirth, const string &sex,
-             const string &id, const string &phoneNumber, const string &emailAddress, const string &level,
-             const string &position, double salary);
-
-    Employee(const string &idCode, const string &fullName, const string &dateOfBirth, const string &sex,
-             const string &id, const string &phoneNumber, const string &emailAddress, const string &level,
-             const string &position);
+    Employee(const string &idCode, const string &fullName, const Date &dateOfBirth, const string &sex, const string &id,
+             const string &phoneNumber, const string &emailAddress, const string &level, const string &position,
+             double salary);
 
     const string &getLevel() const;
 
@@ -37,7 +33,6 @@ public:
     void setSalary(double salary);
 
     void output() override;
-
 };
 
 

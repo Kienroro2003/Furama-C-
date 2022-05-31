@@ -18,12 +18,15 @@ public:
     Room(const string &idFacility, double areaUser, int rentalPrice, int rentalPeopleMax,
          const string &styleRental, const string &freeService);
 
+    Room(const string &idFacility, const string &nameService, double areaUser, int rentalPrice, int rentalPeopleMax,
+         const string &styleRental, const string &freeService);
+
     const string &getFreeService() const;
 
     void setFreeService(const string &freeService);
 
 
-    void output() override;
+    void output() const override;
 
 };
 

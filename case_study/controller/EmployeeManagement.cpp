@@ -13,14 +13,10 @@ void EmployeeManagement::employeeMenu() {
         cout << "1. Display all employee" << endl;
         cout << "2. Add new employee" << endl;
         cout << "3. Edit employee" << endl;
-        cout << "4. Return main memu" << endl;
+        cout << "4. Return main menu" << endl;
         cout << "Enter your choice: ";
         int choice;
-        try{
-            cin >> choice;
-        }catch(exception exception){
-            exception.what();
-        };
+        cin >> choice;
         cin.ignore();
         switch (choice) {
             case 1: {
@@ -40,5 +36,4 @@ void EmployeeManagement::employeeMenu() {
             }
         }
     }
-
 }

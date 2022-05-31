@@ -17,7 +17,7 @@ class Facility {
     private int rentalPeopleMax;
     private String styleRental;
      */
-private:
+protected:
     string idFacility;
     string nameService;
     double areaUser;
@@ -54,9 +54,9 @@ public:
 
     void setStyleRental(const string &styleRental);
 
-    virtual void output();
+    virtual void output() const =0;
 
-
+    bool operator<(const Facility &rhs) const;
 };
 
 

@@ -6,7 +6,7 @@
 
 Person::Person() {}
 
-Person::Person(const string &idCode, const string &fullName, const string &dateOfBirth, const string &sex,
+Person::Person(const string &idCode, const string &fullName, const Date &dateOfBirth, const string &sex,
                const string &id, const string &phoneNumber, const string &emailAddress) : idCode(idCode),
                                                                                           fullName(fullName),
                                                                                           dateOfBirth(dateOfBirth),
@@ -28,14 +28,6 @@ const string &Person::getFullName() const {
 
 void Person::setFullName(const string &fullName) {
     Person::fullName = fullName;
-}
-
-const string &Person::getDateOfBirth() const {
-    return dateOfBirth;
-}
-
-void Person::setDateOfBirth(const string &dateOfBirth) {
-    Person::dateOfBirth = dateOfBirth;
 }
 
 const string &Person::getSex() const {
@@ -68,4 +60,12 @@ const string &Person::getEmailAddress() const {
 
 void Person::setEmailAddress(const string &emailAddress) {
     Person::emailAddress = emailAddress;
+}
+
+const Date &Person::getDateOfBirth() const {
+    return dateOfBirth;
+}
+
+void Person::setDateOfBirth(const Date &dateOfBirth) {
+    Person::dateOfBirth = dateOfBirth;
 }

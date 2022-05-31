@@ -7,8 +7,11 @@
 
 
 #include "Service.h"
+#include "../model/bean/Customer.h"
 
 class CustomerService: public Service {
+private:
+    list<Customer> customerList;
 public:
     void add() override;
 

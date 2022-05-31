@@ -51,12 +51,10 @@ void Contract::setCustomer(const Customer &customer) {
 }
 
 void Contract::output() {
-    cout << "Contract{idContract: " << getIdContract()
-    << ", idBooking: " << getBooking().getIdBooking()
-    << ", prePayment: " << getPrePayment()
-    << ", totalPayment: " << getTotalPayment()
-    << ", idCustomer: " << getCustomer().getIdCode()
-    << "}"
+    cout << setw(15) << getIdContract()
+    << setw(15) << getBooking().getIdBooking()
+    << setw(15) << getPrePayment()
+    << setw(15) << getTotalPayment()
+    << setw(15) << getCustomer().getIdCode()
     << endl;
-
 }

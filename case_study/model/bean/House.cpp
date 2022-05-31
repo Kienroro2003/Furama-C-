@@ -31,16 +31,20 @@ void House::setFloor(int floor) {
     House::floor = floor;
 }
 
-void House::output() {
-    cout << "House{idFacility: " << getIdFacility()
-    << ", nameService: " << getNameService()
-    << ", areaUser: " << getAreaUser()
-    << ", rentalPrice: " << getRentalPrice()
-    << ", rentalPeopleMax: " << getRentalPeopleMax()
-    << ", styleRental: " << getStyleRental()
-    << ", standardHose: " << getStandardHose()
-    << ", floor: " << getFloor()
-    << "}"
-    << endl;
-
+void House::output()const {
+    cout << setw(8)<< getIdFacility()
+    << setw(10)<< getNameService()
+    << setw(15)<< getAreaUser()
+    << setw(15)<< getRentalPrice()
+    << setw(15)<< getRentalPeopleMax()
+    << setw(20)<< getStyleRental()
+    << setw(20)<< getStandardHose()
+    << setw(10)<< getFloor();
 }
+
+House::House(const string &idFacility, const string &nameService, double areaUser, int rentalPrice, int rentalPeopleMax,
+             const string &styleRental, const string &standardHose, int floor) : Facility(idFacility, nameService,
+                                                                                          areaUser, rentalPrice,
+                                                                                          rentalPeopleMax, styleRental),
+                                                                                 standardHose(standardHose),
+                                                                                 floor(floor) {}

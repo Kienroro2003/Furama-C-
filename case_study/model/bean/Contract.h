@@ -43,7 +43,6 @@ public:
     void setCustomer(const Customer &customer);
 
     void output();
-
 };
 
 

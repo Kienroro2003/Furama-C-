@@ -32,18 +32,16 @@ void Villa::setFloor(int floor) {
     Villa::floor = floor;
 }
 
-void Villa::output() {
-    Facility::output();
-    cout << "Villa{ idFacility: " << getIdFacility()
-    << ", nameService: " << getNameService()
-    << ", areaUser: " << getAreaUser()
-    << ", rentalPeopleMax: " << getRentalPeopleMax()
-    << ", styleRental: " << getStyleRental()
-    << ", standardVilla: " << getStandardVilla()
-    << ", areaPool: " << getAreaPool()
-    << ", floor: " << getFloor()
-    << "}"
-    << endl;
+void Villa::output() const {
+    cout << setw(8)<< getIdFacility()
+    << setw(10) << getNameService()
+    << setw(15) << getAreaUser()
+    << setw(15) << getRentalPrice()
+    << setw(15)<< getRentalPeopleMax()
+    << setw(20) << getStyleRental()
+    << setw(20) << getStandardVilla()
+    << setw(10) << getFloor()
+    << setw(10) << getAreaPool();
 }
 
 const string &Villa::getStandardVilla() const {
@@ -57,3 +55,4 @@ double Villa::getAreaPool() const {
 int Villa::getFloor() const {
     return floor;
 }
+
