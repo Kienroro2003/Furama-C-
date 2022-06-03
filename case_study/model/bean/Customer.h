@@ -1,7 +1,3 @@
-//
-// Created by Kienroro on 07/05/2022.
-//
-
 #ifndef CASE_STUDY_CUSTOMER_H
 #define CASE_STUDY_CUSTOMER_H
 
@@ -15,8 +11,14 @@ private:
 public:
     Customer();
 
-    Customer(const string &idCode, const string &fullName, const Date &dateOfBirth, const string &sex,
-             const string &id, const string &phoneNumber, const string &emailAddress, const string &typeCustomer,
+    Customer(const string &idCode,
+             const string &fullName,
+             const Date &dateOfBirth,
+             const string &sex,
+             const string &id,
+             const string &phoneNumber,
+             const string &emailAddress,
+             const string &typeCustomer,
              const string &address);
 
     const string &getTypeCustomer() const;

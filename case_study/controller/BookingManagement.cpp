@@ -1,6 +1,4 @@
-//
-// Created by Kienroro on 14/05/2022.
-//
+
 
 #include "BookingManagement.h"
 #include "../service/BookingService.h"

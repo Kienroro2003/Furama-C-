@@ -1,7 +1,3 @@
-//
-// Created by Kienroro on 07/05/2022.
-//
-
 #ifndef CASE_STUDY_BOOKING_H
 #define CASE_STUDY_BOOKING_H
 
@@ -19,10 +15,13 @@ private:
 public:
     Booking();
 
-    Booking(const string &idBooking, const Date &startDate, const Date &endDate, const Customer &customer,
+    Booking(const string &idBooking,
+            const Date &startDate,
+            const Date &endDate,
+            const Customer &customer,
             Facility *facility);
 
-
+    void output() const;
 
     const string &getIdBooking() const;
 
@@ -43,8 +42,6 @@ public:
     Facility *getFacility() const;
 
     void setFacility(Facility *facility);
-
-    void output() const;
 
     bool operator<(const Booking &rhs) const;
 };

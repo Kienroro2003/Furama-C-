@@ -1,6 +1,4 @@
-//
-// Created by Kienroro on 22/04/2022.
-//
+
 
 #include "CustomerManagement.h"
 #include "../service/CustomerService.h"

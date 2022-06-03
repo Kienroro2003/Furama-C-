@@ -1,6 +1,4 @@
-//
-// Created by Kienroro on 12/05/2022.
-//
+
 
 #include "Regex.h"
 #include "../model/bean/Employee.h"

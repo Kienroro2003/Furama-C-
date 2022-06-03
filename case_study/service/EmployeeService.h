@@ -1,6 +1,3 @@
-//
-// Created by Kienroro on 22/04/2022.
-//
 #include "../model/bean/Employee.h"
 #include "Service.h"
 

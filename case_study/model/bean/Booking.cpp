@@ -1,7 +1,3 @@
-//
-// Created by Kienroro on 07/05/2022.
-//
-
 #include "Booking.h"
 
 Booking::Booking() {}
@@ -46,9 +42,17 @@ bool Booking::operator<(const Booking &rhs) const {
     return idBooking < rhs.idBooking;
 }
 
-Booking::Booking(const string &idBooking, const Date &startDate, const Date &endDate, const Customer &customer,
-                 Facility *facility) : idBooking(idBooking), startDate(startDate), endDate(endDate), customer(customer),
-                                       facility(facility) {}
+Booking::Booking(const string &idBooking,
+                 const Date &startDate,
+                 const Date &endDate,
+                 const Customer &customer,
+                 Facility *facility)
+                 :
+                 idBooking(idBooking),
+                 startDate(startDate),
+                 endDate(endDate),
+                 customer(customer),
+                 facility(facility) {}
 
 const Date &Booking::getStartDate() const {
     return startDate;

@@ -1,7 +1,3 @@
-//
-// Created by Kienroro on 14/05/2022.
-//
-
 #include "ContractService.h"
 #include "../util/ReadAndWriteBooking.h"
 #include "../util/ReadAndWriteContract.h"

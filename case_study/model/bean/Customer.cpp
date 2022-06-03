@@ -1,13 +1,15 @@
-//
-// Created by Kienroro on 07/05/2022.
-//
-
 #include "Customer.h"
 
 Customer::Customer() {}
 
-Customer::Customer(const string &idCode, const string &fullName, const Date &dateOfBirth, const string &sex,
-                   const string &id, const string &phoneNumber, const string &emailAddress, const string &typeCustomer,
+Customer::Customer(const string &idCode,
+                   const string &fullName,
+                   const Date &dateOfBirth,
+                   const string &sex,
+                   const string &id,
+                   const string &phoneNumber,
+                   const string &emailAddress,
+                   const string &typeCustomer,
                    const string &address) : Person(idCode, fullName, dateOfBirth, sex, id, phoneNumber, emailAddress),
                                             typeCustomer(typeCustomer), address(address) {
 

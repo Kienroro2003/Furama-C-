@@ -1,6 +1,4 @@
-//
-// Created by Kienroro on 07/05/2022.
-//
+
 
 #ifndef CASE_STUDY_HOUSE_H
 #define CASE_STUDY_HOUSE_H

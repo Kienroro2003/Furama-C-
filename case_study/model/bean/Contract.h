@@ -1,6 +1,3 @@
-//
-// Created by Kienroro on 07/05/2022.
-//
 #include "../../header.h"
 #include "Booking.h"
 
@@ -19,8 +16,13 @@ private:
 public:
     Contract();
 
-    Contract(const string &idContract, const Booking &booking, int prePayment, int totalPayment,
+    Contract(const string &idContract,
+             const Booking &booking,
+             int prePayment,
+             int totalPayment,
              const Customer &customer);
+
+    void output();
 
     const string &getIdContract() const;
 
@@ -41,8 +43,6 @@ public:
     const Customer &getCustomer() const;
 
     void setCustomer(const Customer &customer);
-
-    void output();
 };
 
 

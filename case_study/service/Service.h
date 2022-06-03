@@ -1,7 +1,3 @@
-//
-// Created by Kienroro on 08/05/2022.
-//
-
 #ifndef CASE_STUDY_SERVICE_H
 #define CASE_STUDY_SERVICE_H
 

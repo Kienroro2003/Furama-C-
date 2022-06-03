@@ -1,7 +1,3 @@
-//
-// Created by Kienroro on 14/05/2022.
-//
-
 #include "FacilityManagement.h"
 #include "../service/FacilityService.h"
 

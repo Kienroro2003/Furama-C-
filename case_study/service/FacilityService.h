@@ -1,6 +1,3 @@
-//
-// Created by Kienroro on 14/05/2022.
-//
 #include "../header.h"
 #include "../model/bean/Room.h"
 #include "../model/bean/Villa.h"

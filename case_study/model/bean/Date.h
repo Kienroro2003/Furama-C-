@@ -1,6 +1,4 @@
-//
-// Created by Kienroro on 23/05/2022.
-//
+
 #include "../../header.h"
 
 #ifndef CASE_STUDY_DATE_H

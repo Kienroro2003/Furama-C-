@@ -1,6 +1,3 @@
-//
-// Created by Kienroro on 22/04/2022.
-//
 #include "../header.h"
 
 #include "EmployeeManagement.h"

@@ -1,7 +1,3 @@
-//
-// Created by Kienroro on 14/05/2022.
-//
-
 #ifndef CASE_STUDY_CONTRACTSERVICE_H
 #define CASE_STUDY_CONTRACTSERVICE_H
 
@@ -16,7 +12,6 @@ public:
     void displayContract();
     void addContract();
     void editContract();
-
 };
 
 

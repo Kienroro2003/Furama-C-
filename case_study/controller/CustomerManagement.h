@@ -1,6 +1,4 @@
-//
-// Created by Kienroro on 22/04/2022.
-//
+
 #include "../header.h"
 
 #ifndef CASE_STUDY_CUSTOMERMANAGEMENT_H

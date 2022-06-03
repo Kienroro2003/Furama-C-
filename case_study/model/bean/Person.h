@@ -1,6 +1,3 @@
-//
-// Created by Kienroro on 07/05/2022.
-//
 #include "../../header.h"
 #include "Date.h"
 
@@ -20,8 +17,15 @@ protected:
 public:
     Person();
 
-    Person(const string &idCode, const string &fullName, const Date &dateOfBirth, const string &sex, const string &id,
-           const string &phoneNumber, const string &emailAddress);
+    Person(const string &idCode,
+           const string &fullName,
+           const Date &dateOfBirth,
+           const string &sex,
+           const string &id,
+           const string &phoneNumber,
+           const string &emailAddress);
+
+    virtual void output() = 0 ;
 
     const string &getIdCode() const;
 
@@ -51,7 +55,7 @@ public:
 
     void setEmailAddress(const string &emailAddress);
 
-    virtual void output() = 0 ;
+
 };
 
 

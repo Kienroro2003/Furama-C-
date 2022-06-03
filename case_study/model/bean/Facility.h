@@ -9,14 +9,6 @@
 
 
 class Facility {
-    /**
-     * private String idFacility;
-    private String nameService;
-    private double areaUse;
-    private int rentalPrice;
-    private int rentalPeopleMax;
-    private String styleRental;
-     */
 protected:
     string idFacility;
     string nameService;
@@ -27,8 +19,16 @@ protected:
 public:
     Facility();
 
-    Facility(const string &idFacility, const string &nameService, double areaUser, int rentalPrice, int rentalPeopleMax,
+    Facility(const string &idFacility,
+             const string &nameService,
+             double areaUser,
+             int rentalPrice,
+             int rentalPeopleMax,
              const string &styleRental);
+
+    virtual void output() const =0;
+
+    bool operator<(const Facility &rhs) const;
 
     const string &getIdFacility() const;
 
@@ -54,9 +54,9 @@ public:
 
     void setStyleRental(const string &styleRental);
 
-    virtual void output() const =0;
 
-    bool operator<(const Facility &rhs) const;
+
+
 };
 
 

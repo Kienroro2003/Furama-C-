@@ -1,7 +1,3 @@
-//
-// Created by Kienroro on 14/05/2022.
-//
-
 #include "ReadAndWriteFacility.h"
 
 void ReadAndWriteFacility::writeRoom(string path, map<Room, int> mapRoom) {

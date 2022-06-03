@@ -1,14 +1,18 @@
-//
-// Created by Kienroro on 07/05/2022.
-//
-
 #include "Contract.h"
 
 Contract::Contract() {}
 
-Contract::Contract(const string &idContract, const Booking &booking, int prePayment, int totalPayment,
-                   const Customer &customer) : idContract(idContract), booking(booking), prePayment(prePayment),
-                                               totalPayment(totalPayment), customer(customer) {}
+Contract::Contract(const string &idContract,
+                   const Booking &booking,
+                   int prePayment,
+                   int totalPayment,
+                   const Customer &customer)
+                   :
+                   idContract(idContract),
+                   booking(booking),
+                   prePayment(prePayment),
+                   totalPayment(totalPayment),
+                   customer(customer) {}
 
 const string &Contract::getIdContract() const {
     return idContract;

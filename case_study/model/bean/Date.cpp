@@ -1,7 +1,3 @@
-//
-// Created by Kienroro on 23/05/2022.
-//
-
 #include "Date.h"
 
 bool isLeapYear(int year) {
